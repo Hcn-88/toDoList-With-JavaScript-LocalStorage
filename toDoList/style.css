@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f7f4f4;
+}
+.wrapper {
+    width: 80%;
+    margin: 0px auto;
+}
+.form{
+    width: 40%;
+    margin: 30px auto;
+    background: #eee;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.label{
+    text-align: center;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.input{
+    flex: 1;
+}
+.user input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 0;
+}
+.icon i{
+    background: #eee;
+    padding: 8px;
+    cursor: pointer;
+    transition: .6s;
+}
+.icon i:hover{
+    background: rgb(197, 196, 196);
+}
+main{
+    width: 40%;
+    margin: 0 auto;
+}
+main .container{
+    width: 100%;
+    margin: 0 auto;
+}
+.container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #eee;
+    border: 1px solid silver;
+    transition: all 1s ease-in-out;
+}
+main i{
+    color: #bb3030;
+    cursor: pointer;
+    background: #fff;
+    padding: 10px;
+    transition: .5s;
+}
+main i:hover{
+    background: rgb(226, 223, 223);
+}
+main p{
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all .6s ease-in-out;
+}
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.deleted{
+    transform: translateY(-30px) scale(0);
+}
+
+@media (min-width: 900px) {
+    .wrapper {
+        width: 70%;
+    }
+    .form, main{
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        width: 70%;
+    }
+    .form, main{
+        width: 80%;
+    }
+}
+
+@media (max-width: 760px) {
+    .wrapper{
+        width: 80%;
+    }
+    .form, main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper {
+        width: 100%;
+    }
+    .form, main{
+        width: 98%;
+    }
+}
